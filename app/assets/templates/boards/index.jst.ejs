@@ -1,0 +1,15 @@
+<h3>My Boards</h3>
+
+<% _.each(boards.models, function(board) { %>
+  <li>
+    <% var link = '#/boards/' + board.get('id') %>
+    <a href='<%= link %>' class="default-board-text my-board-text">
+      <%= board.escape('title') %>
+    </a>
+    <span class="fade"></span>
+  </li>
+  <% }) %>
+
+  <li class='add-board-list'>
+    <a href="#" class="add-board-text default-board-text">Create new board...</a>
+  </li>

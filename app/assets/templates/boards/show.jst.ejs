@@ -1,0 +1,17 @@
+<h3><%= board.escape('title') %></h3>
+
+<% _.each(board.lists().models, function(list) { %>
+    <div class="single-list">
+      <div class="list-header">
+        <span class="list-title">
+          <%= list.escape('title') %>
+        </span>
+      </div>
+
+      <div class="cards">
+        <% _.each(list.cards().models, function(card) { %>
+          <span><%= card.escape('title') %></span>
+        <% }); %>
+      </div>
+    </div>
+<% }); %>

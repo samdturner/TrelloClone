@@ -1,0 +1,184 @@
+.board-list li {
+  float: left;
+  width: 25%;
+}
+
+ul  {
+  list-style-type: none;
+}
+
+.board-list li, .sidebar-boards-list li {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.board-list li {
+  height: 84px;
+  background-color: #026aa7;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 10px;
+  border-radius: 3px;
+}
+
+hover: .board-list li {
+  cursor: pointer;
+}
+
+a.my-board-text {
+  color: #fff;
+  padding: 12px 8px;
+  font-weight: 700;
+}
+
+a.default-board-text:hover {
+  opacity: 0.8;
+}
+
+a.default-board-text {
+  height: 84px;
+  background-position: center center;
+  border-radius: 3px;
+  display: block;
+  text-decoration: none;
+}
+
+a.add-board-text {
+  background-color: #d6dadc;
+  color: #8c8c8c;
+  font-weight: 400;
+  line-height: 90px;
+  text-align: center;
+  opacaity: 1;
+}
+
+li.add-board-list {
+  opacaity: 0;
+}
+
+div.create-board-container {
+  position: absolute;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #c4c9cc;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.15);
+  width: 300px;
+  z-index: 20;
+  top: -50px;
+  height: 302px;
+}
+
+div.create-board-header {
+  font-size: 14px;
+
+  display: block;
+  border-bottom: 1px solid #d6dadc;
+  margin: 0 10px;
+  text-align: center;
+  font: 14px "Helvetica Neue",Arial,Helvetica,sans-serif;
+  position: relative;
+  height: 36px;
+}
+
+label.create-board-header {
+  color: #8c8c8c;
+  padding: 0px 32px 0px 32px;
+  height: 36px;
+  width: 216px;
+  text-align: center;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+button.create-board-button {
+  box-shadow: 0 1px 0 #4d4d4d;
+  color: #fff;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-weight: 700;
+  line-height: 22px;
+  margin: 8px 4px 0 0;
+  padding: 7px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  border-radius: 3px;
+  font: 14px "Helvetica Neue", Arial, Helvetica;
+  border: none;
+  background-color: #64a200;
+}
+
+button.create-board-button:hover {
+  background: linear-gradient(to bottom, #64a200 0, #578c00 100%);
+}
+
+a.close-btn {
+  color: #a6a6a6;
+  size: 14;
+  padding: 10px 10px 10px 4px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+a.close-btn:hover {
+  color: #111;
+  text-decoration: none;
+}
+
+input.title-input  {
+  display: block;
+  background-color: #e2e4e6;
+  border: 1px solid #cdd2d4;
+  display: 3px;
+  min-height: 34px;
+  padding: 7px;
+  margin: 3px 0 12px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+input.title-input:hover {
+  border-color: #a5acb0;
+}
+
+input.title-input:focus {
+  background: #fff;
+}
+
+div.create-board-form {
+  width: 100%;
+  height: 248px;
+  padding: 0 10px 10px 10px;
+  z-index: 21
+  align: center;
+}
+
+div.single-list {
+  background: #e2e4e6;
+  border-radius: 3px;
+  margin: 0 5px;
+  max-height: 100%;
+  min-height: 69px;
+  position: relative;
+  width: 270px;
+  float: left;
+}
+
+div.list-header {
+  padding: 8px 34px 8px 10px;
+  position: relative;
+  min-height: 19px;
+}
+
+span.list-title {
+  display: inline;
+  font-size: 15px;
+  line-height: 18px;
+  margin: 0;
+  min-height: 19px;
+  min-width: 30px;
+  overflow: hidden;
+  font: 14px "Helvetica Neue", Arial,Helvetica,sans-serif;
+  font-weight: 500;
+  color: #4d4d4d;
+}
